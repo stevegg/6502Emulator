@@ -5,7 +5,7 @@ import oneDarkPro from 'react-hex-editor/themes/oneDarkPro';
 import styled from 'styled-components';
 
 const MemoryContainer = styled.div`
-    height: 100%;
+
 `
 
 const MemoryDisplay:FC = ():ReactElement => {

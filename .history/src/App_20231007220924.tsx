@@ -14,24 +14,22 @@ const Container = styled.div`
   justify-content: flex-start;
   align-content: stretch;
   align-items: flex-start;
-  width: 100%;
-  height: 100%;
 `
 
 const Disassembly = styled.div`
-  display: flex;
-  flex: 2 2 auto;
+  order: 0;
+  flex: 1 1 auto;
   align-self: stretch;
 `
 
 const Memory = styled.div`
-  display: flex;
+  order: 0;
   flex: 0 1 auto;
   align-self: stretch;
 `
 
 const Registers = styled.div`
-  display: flex;
+  order: 0;
   flex: 0 1 auto;
   align-self: stretch;
 `

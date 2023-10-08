@@ -8,31 +8,44 @@ import RegistersDisplay from './machine/Registers';
 import styled from 'styled-components';
 
 const Container = styled.div`
+  display: -webkit-flex;
   display: flex;
+  -webkit-flex-direction: row;
   flex-direction: row;
+  -webkit-flex-wrap: nowrap;
   flex-wrap: nowrap;
+  -webkit-justify-content: flex-start;
   justify-content: flex-start;
+  -webkit-align-content: stretch;
   align-content: stretch;
+  -webkit-align-items: flex-start;
   align-items: flex-start;
-  width: 100%;
-  height: 100%;
 `
 
 const Disassembly = styled.div`
-  display: flex;
-  flex: 2 2 auto;
+  -webkit-order: 0;
+  order: 0;
+  -webkit-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -webkit-align-self: stretch;
   align-self: stretch;
 `
 
 const Memory = styled.div`
-  display: flex;
+  -webkit-order: 0;
+  order: 0;
+  -webkit-flex: 0 1 auto;
   flex: 0 1 auto;
+  -webkit-align-self: stretch;
   align-self: stretch;
 `
 
 const Registers = styled.div`
-  display: flex;
+  -webkit-order: 0;
+  order: 0;
+  -webkit-flex: 0 1 auto;
   flex: 0 1 auto;
+  -webkit-align-self: stretch;
   align-self: stretch;
 `
 

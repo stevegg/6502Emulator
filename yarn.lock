@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"6502-disasm@^0.0.6":
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/6502-disasm/-/6502-disasm-0.0.6.tgz#7f8aea7d8cb06ca5f0c258d83636fc1afe9f7d2b"
+  integrity sha512-urinTCW5IALJuR/k84x1cmfDQI3ZEmgi9Zg+0o32edLWApjFPf0gVadcWPdc72k965CA8oouTmIL9I4+Cud+7g==
+
 "6502@mat-sz/6502":
   version "0.0.1"
   resolved "https://codeload.github.com/mat-sz/6502/tar.gz/df529064dca7ae12d5c0cb03c9bfabd011c2b41c"

@@ -7,31 +7,34 @@ import RegistersDisplay from './machine/Registers';
 
 import styled from 'styled-components';
 
-const Container = styled.div`
+const ContentRow = styled.div`
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-content: stretch;
-  align-items: flex-start;
+  flex-wrap: wrap;
   width: 100%;
-  height: 100%;
+  align-content: stretch;
 `
 
 const Disassembly = styled.div`
   display: flex;
-  flex: 2 2 auto;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1 1 auto;
   align-self: stretch;
 `
 
 const Memory = styled.div`
   display: flex;
-  flex: 0 1 auto;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1 1 auto;
   align-self: stretch;
 `
 
 const Registers = styled.div`
   display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
   flex: 0 1 auto;
   align-self: stretch;
 `
@@ -40,7 +43,7 @@ function App() {
   return (
     <div className="App">
       <MachineContext.Provider value={MachineContextInit}>
-        <Container>
+        <ContentRow>
           <Disassembly>
             Something
           </Disassembly>
@@ -50,7 +53,7 @@ function App() {
           <Registers>
             <RegistersDisplay />
           </Registers>
-        </Container>
+        </ContentRow>
       </MachineContext.Provider>
     </div>
   );

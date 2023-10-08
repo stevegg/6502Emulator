@@ -34,6 +34,7 @@ const Registers = styled.div`
   display: flex;
   flex: 0 1 auto;
   align-self: stretch;
+  width: 200px;
 `
 
 function App() {

@@ -2,11 +2,6 @@ import React, { FC, ReactElement, useContext, useState } from 'react';
 import MachineContext from '../MachineContext';
 import HexEditor from 'react-hex-editor';
 import oneDarkPro from 'react-hex-editor/themes/oneDarkPro';
-import styled from 'styled-components';
-
-const MemoryContainer = styled.div`
-    height: 100%;
-`
 
 const MemoryDisplay:FC = ():ReactElement => {
     const machineContext = useContext(MachineContext);
@@ -20,7 +15,8 @@ const MemoryDisplay:FC = ():ReactElement => {
     }, [data]);
 
     return (
-        <MemoryContainer>
+        <div style={{ height: '100%'}}>
+            <div>{`PC: ${machineContext?.state?.PC}`}</div>
             <HexEditor 
                 height={800}
                 columns={0x10}
@@ -31,7 +27,7 @@ const MemoryDisplay:FC = ():ReactElement => {
                 nonce={nonce}
                 onSetValue={handleSetValue}
                 theme={{ hexEditor: oneDarkPro }} />
-        </MemoryContainer>
+        </div>
     );
 };
 
